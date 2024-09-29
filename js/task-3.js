@@ -4,9 +4,9 @@ function checkForSpam(message) {
 
   const normStr = message.toLowerCase();
   if (normStr.includes(word1) || normStr.includes(word2)) {
-    return `true`;
+    return true;
   } else {
-    return `false`;
+    return false;
   }
 }
 console.log(checkForSpam("Latest technology news")); // false
